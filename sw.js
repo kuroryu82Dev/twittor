@@ -31,7 +31,7 @@ self.addEventListener('install', e =>{
         cache.addAll(APP_SHELL)
     })
 
-    const cacheInmutable = caches.open(INMUTABLE_CACHE).then( cachee => {
+    const cacheInmutable = caches.open(INMUTABLE_CACHE).then( cache => {
         cache.addAll(APP_SHELL_IMNUTABLE)
     })
 
